@@ -1,0 +1,29 @@
+{
+  "name": "zc-deep-agent",
+  "version": "1.0.0",
+  "description": "基于 DeepSeek 实现通用型 AI 智能体",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup",
+    "dev": "npm run build && node dist/index.js",
+    "demo:basic": "npm run build && node dist/demo-basic.js",
+    "demo:search": "npm run build && node dist/demo-search.js",
+    "demo:multi": "npm run build && node dist/demo-multi-agent.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^18.0.8",
+    "fs-extra": "^11.4.1",
+    "openai": "^7.39.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^26.6.5",
+    "tsup": "^9.0.0",
+    "typescript": "^7.0.2"
+  }
+}
